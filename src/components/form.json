@@ -1,0 +1,317 @@
+{
+ "description": "Do you recycle?",
+ "pages": [
+  {
+   "name": "page1",
+   "elements": [
+    {
+     "type": "text",
+     "name": "Q1",
+     "title": "What country are you from?",
+     "hideNumber": true,
+     "isRequired": true
+    },
+    {
+     "type": "text",
+     "name": "Q2",
+     "title": "How many people are in your household?",
+     "hideNumber": true,
+     "isRequired": true,
+     "inputType": "number"
+    }
+   ],
+   "title": "General Questions"
+  },
+  {
+   "name": "page2",
+   "elements": [
+    {
+     "type": "text",
+     "name": "Q3",
+     "title": "How many gas-powered vehicles do you own?",
+     "hideNumber": true,
+     "isRequired": true,
+     "inputType": "number",
+     "min": "0"
+    },
+    {
+     "type": "text",
+     "name": "Q4",
+     "visibleIf": "{Q3} > 0",
+     "title": "How many miles do you drive them in a week total?",
+     "hideNumber": true,
+     "isRequired": true,
+     "inputType": "number"
+    },
+    {
+     "type": "text",
+     "name": "Q5",
+     "title": "How many electric vehicles do you own?",
+     "hideNumber": true,
+     "isRequired": true,
+     "inputType": "number"
+    },
+    {
+     "type": "text",
+     "name": "Q6",
+     "visibleIf": "{Q5} > 0",
+     "title": "How many miles do you drive them in a week total?",
+     "hideNumber": true,
+     "isRequired": true,
+     "inputType": "number"
+    },
+    {
+     "type": "text",
+     "name": "Q7",
+     "title": "How many miles do you use public transit in a week total?",
+     "hideNumber": true,
+     "isRequired": true,
+     "inputType": "number"
+    },
+    {
+     "type": "text",
+     "name": "Q8",
+     "title": "How many miles do you fly by air on average every year?",
+     "hideNumber": true,
+     "isRequired": true,
+     "inputType": "number",
+     "min": "0"
+    }
+   ],
+   "title": "Travel Questions"
+  },
+  {
+   "name": "page3",
+   "elements": [
+    {
+     "type": "text",
+     "name": "Q9",
+     "title": "How much is your electricity bill on average per month?",
+     "hideNumber": true,
+     "isRequired": true,
+     "inputType": "number"
+    },
+    {
+     "type": "text",
+     "name": "Q10",
+     "title": "How much is your natural gas bill on average per month?",
+     "hideNumber": true,
+     "isRequired": true,
+     "inputType": "number"
+    },
+    {
+     "type": "dropdown",
+     "name": "Q11",
+     "title": "How many pounds of beef does your household consume per week?",
+     "hideNumber": true,
+     "isRequired": true,
+     "choices": [
+      {
+       "value": 7,
+       "text": "7"
+      },
+      {
+       "value": 6,
+       "text": "6"
+      },
+      {
+       "value": "5",
+       "text": "5"
+      },
+      {
+       "value": "4",
+       "text": "4"
+      },
+      {
+       "value": "3",
+       "text": "3"
+      },
+      {
+       "value": "2",
+       "text": "2"
+      },
+      {
+       "value": "1",
+       "text": "1"
+      },
+      {
+       "value": "0",
+       "text": "0"
+      }
+     ]
+    },
+    {
+     "type": "dropdown",
+     "name": "Q12",
+     "title": "How many pounds of pork does your household consume per week?",
+     "hideNumber": true,
+     "isRequired": true,
+     "choices": [
+      {
+       "value": 7,
+       "text": "7"
+      },
+      {
+       "value": 6,
+       "text": "6"
+      },
+      {
+       "value": "5",
+       "text": "5"
+      },
+      {
+       "value": "4",
+       "text": "4"
+      },
+      {
+       "value": "3",
+       "text": "3"
+      },
+      {
+       "value": "2",
+       "text": "2"
+      },
+      {
+       "value": "1",
+       "text": "1"
+      },
+      {
+       "value": "0",
+       "text": "0"
+      }
+     ]
+    },
+    {
+     "type": "dropdown",
+     "name": "Q13",
+     "title": "How many pounds of chicken/poultry does your household you consume per week?",
+     "hideNumber": true,
+     "isRequired": true,
+     "choices": [
+      {
+       "value": "7",
+       "text": "7"
+      },
+      {
+       "value": "6",
+       "text": "6"
+      },
+      {
+       "value": "5",
+       "text": "5"
+      },
+      {
+       "value": "4",
+       "text": "4"
+      },
+      {
+       "value": "3",
+       "text": "3"
+      },
+      {
+       "value": "2",
+       "text": "2"
+      },
+      {
+       "value": "1",
+       "text": "1"
+      },
+      {
+       "value": "0",
+       "text": "0"
+      }
+     ]
+    },
+    {
+     "type": "dropdown",
+     "name": "Q14",
+     "title": "How many pounds of lamb does your household consume per week?",
+     "hideNumber": true,
+     "choices": [
+      {
+       "value": 7,
+       "text": "7"
+      },
+      {
+       "value": 6,
+       "text": "6"
+      },
+      {
+       "value": "5",
+       "text": "5"
+      },
+      {
+       "value": "4",
+       "text": "4"
+      },
+      {
+       "value": "3",
+       "text": "3"
+      },
+      {
+       "value": "2",
+       "text": "2"
+      },
+      {
+       "value": "1",
+       "text": "1"
+      },
+      {
+       "value": "0",
+       "text": "0"
+      }
+     ]
+    },
+    {
+     "type": "dropdown",
+     "name": "Q15",
+     "title": "How many pounds of seafood does your household consume per week?",
+     "hideNumber": true,
+     "isRequired": true,
+     "choices": [
+      {
+       "value": 7,
+       "text": "7"
+      },
+      {
+       "value": 6,
+       "text": "6"
+      },
+      {
+       "value": "5",
+       "text": "5"
+      },
+      {
+       "value": "4",
+       "text": "4"
+      },
+      {
+       "value": "3",
+       "text": "3"
+      },
+      {
+       "value": "2",
+       "text": "2"
+      },
+      {
+       "value": "1",
+       "text": "1"
+      },
+      {
+       "value": "0",
+       "text": "0"
+      }
+     ]
+    },
+    {
+     "type": "boolean",
+     "name": "Q16",
+     "title": "Do you recycle?",
+     "hideNumber": true,
+     "isRequired": true
+    }
+   ],
+   "title": "Lifestyle Questions"
+  }
+ ]
+}
