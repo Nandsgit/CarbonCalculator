@@ -1,0 +1,111 @@
+{
+ "description": "Feedback",
+ "pages": [
+  {
+   "name": "page1",
+   "elements": [
+    {
+     "type": "rating",
+     "name": "Q1",
+     "title": "How satisfied are you with the Website?",
+     "hideNumber": true,
+     "isRequired": true
+    },
+    {
+     "type": "text",
+     "name": "Q2",
+     "title": "Why have you selected that rating?",
+     "hideNumber": true,
+     "isRequired": true
+    }
+   ],
+   "title": "General Rating"
+  },
+  {
+   "name": "page2",
+   "elements": [
+    {
+     "type": "text",
+     "name": "Q3",
+     "title": "Is there any feature that you would like to see added?",
+     "hideNumber": true,
+     "isRequired": true
+    }
+   ],
+   "title": "Anything You Want to See Added"
+  },
+  {
+   "name": "page3",
+   "elements": [
+    {
+     "type": "boolean",
+     "name": "Q4",
+     "title": "Did you encounter a problem with the website?",
+     "hideNumber": true,
+     "isRequired": true
+    },
+    {
+     "type": "text",
+     "name": "Q5",
+     "title": "What was the problem?",
+     "visibleIf": "{Q4} == true",
+     "hideNumber": true,
+     "isRequired": true
+    },
+    {
+     "type": "text",
+     "name": "Q6",
+     "title": "Can you please describe what you were doing up until the problem occurred?",
+     "visibleIf": "{Q4} == true",
+     "hideNumber": true,
+     "isRequired": true
+    },
+    {
+     "type": "text",
+     "name": "Q7",
+     "title": "What device were you using when the problem appeared?",
+     "visibleIf": "{Q4} == true",
+     "hideNumber": true,
+     "isRequired": true
+    },
+    {
+     "type": "text",
+     "name": "Q8",
+     "title": "Where did the problem appear on this website?",
+     "visibleIf": "{Q4} == true",
+     "hideNumber": true,
+     "isRequired": true
+    }
+   ],
+   "title": "Problems with Website"
+  },
+  {
+   "name": "page4",
+   "elements": [
+    {
+     "type": "text",
+     "name": "Q9",
+     "title": "Any additional comments?",
+     "hideNumber": true,
+     "isRequired": true
+    },
+    {
+     "type": "boolean",
+     "name": "Q10",
+     "title": "Would you recommend this website to a friend or colleague?",
+     "hideNumber": true,
+     "isRequired": true
+    },
+    {
+     "type": "text",
+     "name": "Q11",
+     "title": "Why Not?",
+     "visibleIf": "{Q10} == false",
+     "hideNumber": true,
+     "isRequired": true
+    }
+   ],
+   "title": "Additional Feedback"
+  }
+ ]
+}
