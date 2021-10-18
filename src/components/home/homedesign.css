@@ -1,0 +1,54 @@
+.App {
+  text-align: center;
+}
+
+video {
+  object-fit:cover;
+  width: 100%;
+  height: 100%;
+  position:fixed;
+  z-index: -1;
+}
+
+.home-container{
+  height: 100vh;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: inset 0 0 0 1000px rgba(red, green, blue, alpha);
+}
+
+.home-container {
+  color:rgb(194, 154, 24);
+  font-size: 50px;
+
+  margin-bottom: 50px;
+}
+
+.home-container > p {
+  margin-top: 8px ;
+  color:white;
+  font-size: 32px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.get-btns{
+  margin-top: 32px;
+}
+
+.survey-btns{
+  margin: 4px;
+}
+
+.fa-play-circle{
+  margin-left: 4px;
+}
+
+@media screen and (max-width: 960px){
+  .home-container >h1 {
+    font-size: 70px;
+    margin-top: -150px;
+  }
+}
