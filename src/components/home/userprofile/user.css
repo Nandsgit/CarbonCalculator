@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(20, 202, 178);
+    color: rgb(224, 19, 12);
+}
+
+label {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    text-align: right;
+    width: 400px;
+    line-height: 26px;
+    margin-bottom: 10px;
+  }
+  
+  input {
+    height: 60px;
+    flex: 0 0 200px;
+    margin-left: 10px;
+  }
+
+  .btn {
+    background-color: rgb(11, 67, 221);
+    font-size: 0.9rem;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    transition: background-color ease 300ms, border-color ease 300ms;
+  }
